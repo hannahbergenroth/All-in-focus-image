@@ -11,7 +11,6 @@ b = SML(a);
 
 plot(b)
 
-
 figure
 imshow(a, [])
 %%imshow(Is)
