@@ -1,8 +1,9 @@
 function [ l_pyr ] = laplacian_pyramid( g_pyr )
 %g_pyr: gaussian pyramid 
 
+level = size(g_pyr,1);
 % allocate memory to the pyramid
-l_pyr = cell(size(g_pyr,1),1);
+l_pyr = cell(level,1);
 
 l_pyr{level} = g_pyr{level};
 
