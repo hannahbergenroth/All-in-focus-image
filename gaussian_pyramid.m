@@ -1,7 +1,6 @@
 function [g_pyr] = gaussian_pyramid(I,level)
-
-% I - input image
-% level - number of levels in pyramid
+% I: input image
+% level: number of levels in pyramid
 
 % allocate pyramid of n levels
 g_pyr = cell( level, 1 );

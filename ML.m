@@ -1,5 +1,5 @@
 function [ ML ] = ML( Image )
-%Calculate Modified Laplacian
+%Image: Input image
 
 [y,x] = size(Image);
 padImage = padarray(Image,[1,1],'replicate','both');

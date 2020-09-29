@@ -13,7 +13,27 @@ b = SML(a);
 
 gauss = gaussian_pyramid(I, 5);
 
+%a = UpSize(I);
+%figure
+%imshow(I, [])
+
+%figure
+%imshow(a, [])
+
+%figure
+%imshow(gauss{1}, [])
+%figure
+%imshow(gauss{2}, [])
+%figure
+%imshow(gauss{3}, [])
+%figure
+%imshow(gauss{4}, [])
+%figure
+%imshow(gauss{5}, [])
+
+laplacian1 = laplacian_pyramid(gauss);
+
 figure
-imshow(gauss{1}, [])
+imshow(laplacian1{5}, [])
 figure
-imshow(gauss{5}, [])
+imshow(laplacian1{2}, [])

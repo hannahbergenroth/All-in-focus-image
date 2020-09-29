@@ -1,5 +1,5 @@
 function [ SML ] = SML( ML )
-%Calculate SML
+%ML: Modified Laplacian
 
 [y,x] = size(ML);
 SML = zeros(y,x);
