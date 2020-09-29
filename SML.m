@@ -2,9 +2,7 @@ function [ SML ] = SML( ML )
 %Calculate SML
 
 [y,x] = size(ML);
-
 SML = zeros(y,x);
-
 t = 7/256;
 
 for i = 2:y-1
@@ -14,8 +12,5 @@ for i = 2:y-1
         end
     end
 end
-
 SML = SML(2:y-1,2:x-1);
-
 end
-
